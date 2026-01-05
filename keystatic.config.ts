@@ -31,14 +31,20 @@ export default config({
           description: 'Website-Icon (32x32px, PNG oder ICO)'
         }),
         socialLinks: fields.object({
-          facebook: fields.url({ label: 'Facebook' }),
-          instagram: fields.url({ label: 'Instagram' }),
-          twitter: fields.url({ label: 'X (Twitter)' }),
-          linkedin: fields.url({ label: 'LinkedIn' }),
-          github: fields.url({ label: 'GitHub' }),
+          instagram: fields.url({ label: 'Instagram', description: 'URL zum Instagram-Profil' }),
+          facebook: fields.url({ label: 'Facebook', description: 'URL zum Facebook-Profil' }),
+          linkedin: fields.url({ label: 'LinkedIn', description: 'URL zum LinkedIn-Profil' }),
+          xing: fields.url({ label: 'Xing', description: 'URL zum Xing-Profil' }),
+          x: fields.url({ label: 'X (Twitter)', description: 'URL zum X/Twitter-Profil' }),
+          threads: fields.url({ label: 'Threads', description: 'URL zum Threads-Profil' }),
+          youtube: fields.url({ label: 'YouTube', description: 'URL zum YouTube-Kanal' }),
+          tiktok: fields.url({ label: 'TikTok', description: 'URL zum TikTok-Profil' }),
+          whatsapp: fields.url({ label: 'WhatsApp', description: 'WhatsApp Business Link' }),
+          pinterest: fields.url({ label: 'Pinterest', description: 'URL zum Pinterest-Profil' }),
+          github: fields.url({ label: 'GitHub', description: 'URL zum GitHub-Profil' }),
         }, {
           label: 'Social Media',
-          description: 'Links zu Social-Media-Profilen'
+          description: 'Links zu Social-Media-Profilen (alle optional)'
         }),
       },
     }),
